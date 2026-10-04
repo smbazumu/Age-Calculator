@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background: radial-gradient(rgb(248, 247, 247), rgb(124, 146, 85));
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body.dark {
+    background: radial-gradient(rgb(33, 33, 33),rgb(191, 188, 188));
+    color: whitesmoke;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.button button {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(220, 42, 220);
+    background: black;
+    cursor: pointer;
+}
+
+body.dark button {
+    background: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.header p, .header label {
+    font-size: 14px;
+}
+
+.header img {
+    width: 14px;
+    height: 14px;
+}
+
+.inputdates {
+    display: flex;
+    column-gap: 30px;
+}
+
+.labels {
+    flex-direction: column;
+    flex: 1;
+}
+
+.labels input {
+    height: 60px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.areyou {
+    display: block;
+}
+
+.really {
+    color: grey;
+}
+
+.exact {
+    margin-bottom: 30px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 0 2px whitesmoke;
+    border-radius: 10px;
+    background: radial-gradient(rgb(219, 214, 214), rgb(225, 234, 210));
+}
+
+body.dark .main {
+    background: radial-gradient(rgb(219, 214, 214), rgb(13, 13, 12));
+}
+
+.main p {
+    font-size: 50px;
+}
+
+.main .titlemain {
+    font-size: 14px;
+}
+
+.main p span {
+    color: rgb(4, 174, 4);
+}
+
+body.dark .main p span {
+    color: rgb(6, 237, 237);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background: black;
+    margin-right: 15px;
+}

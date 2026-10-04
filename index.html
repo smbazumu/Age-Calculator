@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <p>A LITTLE MATH - A LOT OF TIME</p>
+            <div>
+                <label for="">Theme</label>
+                <img src="icon-moon.svg" alt="" id="theme">
+            </div>
+        </header>
+        <main>
+            <section>
+                <h1>How old <span class="areyou">are you, <span class="really">really?</span></h1>
+                <p>Enter your date of birth and discover your</p>
+                <p class="exact">exact age in years, months, and days.</p>
+            </section>
+            <section class="main">
+                <p class="titlemain">AGE CALCULATOR</p>
+                <h2>When were you born?</h2>
+                <div class="inputdates">
+                    <div class="inputdates labels">
+                        <label for="">Day</label>
+                        <input type="number" name="" placeholder="DD" min="0" max="31" id="day">
+                    </div>
+                    <div class="inputdates labels">
+                        <label for="">Month</label>
+                        <input type="number" name="" placeholder="MM" min="1" max="12" id="month">
+                    </div>
+                    <div class="inputdates labels">
+                        <label for="">Year</label>
+                        <input type="number" name="" placeholder="YYYY" min="0" max="10000" id="year">
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="line"></div>
+                    <button id="result">⬇</button>
+                </div>
+                <p><span id="yearsofage">--</span>years</p>
+                <p><span id="monthsfromdate">--</span>months</p>
+                <p><span id="daysspan">--</span>days</p>
+            </section>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
