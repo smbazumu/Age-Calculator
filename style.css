@@ -9,13 +9,14 @@ body {
     font-weight: 400;
     font-style: normal;
     background: radial-gradient(rgb(248, 247, 247), rgb(124, 146, 85));
-    max-width: 1440px;
+    max-width: 90rem;
+    height: auto;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 body.dark {
-    background: radial-gradient(rgb(33, 33, 33),rgb(191, 188, 188));
+    background: radial-gradient(rgb(33, 33, 33), rgb(191, 188, 188));
     color: whitesmoke;
 }
 
@@ -25,15 +26,15 @@ section {
 }
 
 section h1 {
-    margin-bottom: 10px;
-    font-size: 50px;
+    margin-bottom: 0.625rem;
+    font-size: 3.125rem;
 }
 
 .button button {
-    margin-bottom: 20px;
-    margin-top: 5px;
-    width: 50px;
-    height: 50px;
+    margin-bottom: 1.25rem;
+    margin-top: 0.3125rem;
+    width: 3.125rem;
+    height: 3.125rem;
     border-radius: 50%;
     border: none;
     color: rgb(220, 42, 220);
@@ -49,34 +50,36 @@ body.dark button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
 }
 
-.header p, .header label {
-    font-size: 14px;
+.header p,
+.header label {
+    font-size: 0.875rem;
 }
 
 .header img {
-    width: 14px;
-    height: 14px;
+    width: 0.875rem;
+    height: 0.875rem;
 }
 
 .inputdates {
     display: flex;
-    column-gap: 30px;
+    column-gap: 1.875rem;
 }
 
 .labels {
+    display: flex;
     flex-direction: column;
     flex: 1;
 }
 
 .labels input {
-    height: 60px;
-    margin-bottom: 50px;
-    padding-left: 10px;
+    height: 3.75rem;
+    margin-bottom: 3.125rem;
+    padding-left: 0.625rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     font-family: "DM Mono", monospace;
     font-weight: 400;
     font-style: normal;
@@ -91,15 +94,15 @@ body.dark button {
 }
 
 .exact {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .main {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    box-shadow: 0 0 2px whitesmoke;
-    border-radius: 10px;
+    padding: 1.25rem;
+    box-shadow: 0 0 0.125rem whitesmoke;
+    border-radius: 0.625rem;
     background: radial-gradient(rgb(219, 214, 214), rgb(225, 234, 210));
 }
 
@@ -108,11 +111,11 @@ body.dark .main {
 }
 
 .main p {
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 .main .titlemain {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .main p span {
@@ -130,7 +133,40 @@ body.dark .main p span {
 
 .line {
     flex: 1;
-    height: 1px;
+    height: 0.0625rem;
     background: black;
-    margin-right: 15px;
+    margin-right: 0.9375rem;
+}
+
+@media (max-width: 48rem) {
+    section h1 {
+        font-size: 2.5rem;
+    }
+
+    .main p {
+        font-size: 2.25rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    body {
+        padding: 0.9375rem;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+
+    .inputdates {
+        flex-direction: column;
+        row-gap: 0;
+    }
+
+    .labels input {
+        margin-bottom: 1.5rem;
+    }
+
+    .main p {
+        font-size: 1.75rem;
+    }
 }
